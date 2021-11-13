@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme">
        <!-- <activity android:name=".home.view.LoginActivity"></activity>-->
         <!--<activity android:name=".home.view.GetDataActivity" />-->
-        <activity android:name=".home.view.GetDataActivity">
+        <activity android:name=".home.view.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
