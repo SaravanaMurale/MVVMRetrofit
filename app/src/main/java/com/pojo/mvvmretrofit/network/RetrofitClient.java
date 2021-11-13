@@ -16,7 +16,7 @@ public class RetrofitClient {
     public static Retrofit getInstance(){
 
         retrofit=new Retrofit.Builder()
-                .baseUrl("")
+                .baseUrl("https://jsonplaceholder.typicode.com/")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
@@ -24,6 +24,13 @@ public class RetrofitClient {
 
 
 
+    }
+
+    public static ApiInteface getApiClient(){
+
+        ApiInteface apiInteface=RetrofitClient.getInstance().create(ApiInteface.class);
+
+        return apiInteface;
     }
 
 }
