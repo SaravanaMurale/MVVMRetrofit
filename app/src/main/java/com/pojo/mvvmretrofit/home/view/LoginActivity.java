@@ -3,6 +3,7 @@ package com.pojo.mvvmretrofit.home.view;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
@@ -26,7 +27,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         activityLoginBinding= DataBindingUtil.setContentView(this,R.layout.activity_login);
-        loginViewModel = ViewModelProviders.of(this,new LoginViewModelFactory(this,new LoginRequestModel())).get(LoginViewModel.class);
+        //loginViewModel = ViewModelProviders.of(this,new LoginViewModelFactory(this,new LoginRequestModel())).get(LoginViewModel.class);
+        loginViewModel = new ViewModelProvider(this).get(LoginViewModel.class);
 
         activityLoginBinding.setLogin(loginViewModel);
 

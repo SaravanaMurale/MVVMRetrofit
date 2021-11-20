@@ -23,6 +23,9 @@ public class LoginViewModel extends ViewModel {
     LoginRequestModel loginRequestModel;
     Context context;
 
+    public LoginViewModel() {
+    }
+
     public LoginViewModel(LoginRequestModel loginRequestModel, Context context) {
         this.loginRequestModel = loginRequestModel;
         this.context = context;
