@@ -1,9 +1,11 @@
 package com.pojo.mvvmretrofit.home.model;
 
-public class LoginRequestModel {
+import androidx.databinding.BaseObservable;
 
-    String mobileNumber;
-    String password;
+public class LoginRequestModel extends BaseObservable {
+
+   public String mobileNumber;
+    public String password;
 
     public LoginRequestModel() {
     }
