@@ -39,8 +39,6 @@ public class LoginViewModel extends ViewModel {
 
     public LiveData<Response> login() {
 
-
-
         LoginRequestModel requestModel = new LoginRequestModel();
         requestModel.setMobileNumber(phoneNo.getValue());
         requestModel.setPassword(password.getValue());
