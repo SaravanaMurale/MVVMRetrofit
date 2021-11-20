@@ -29,4 +29,12 @@ public class GetUserDetailsModel {
     public void setBody(String body) {
         this.body = body;
     }
+
+    @Override
+    public String toString() {
+        return "GetUserDetailsModel{" +
+                "title='" + title + '\'' +
+                ", body='" + body + '\'' +
+                '}';
+    }
 }

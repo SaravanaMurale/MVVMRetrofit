@@ -22,8 +22,6 @@ public class RetrofitClient {
 
         return retrofit;
 
-
-
     }
 
     public static ApiInteface getApiClient(){

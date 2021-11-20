@@ -12,11 +12,6 @@ public class GetDataViewModel extends ViewModel {
 
     Repository repository=new Repository();
 
-
-
-
-
-
     public LiveData<List<GetUserDetailsModel>> getDataFromServer(){
 
         return repository.getUserDetails();

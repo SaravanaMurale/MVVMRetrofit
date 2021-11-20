@@ -22,8 +22,6 @@ public class Repository {
         MutableLiveData<Response> liveData = new MutableLiveData<>();
 
         //liveData.setValue();
-
-
         return liveData;
 
 
