@@ -33,5 +33,6 @@ public class RoomDatabaseActivity extends AppCompatActivity {
     }
 
     public void findCompletedTodos(View view) {
+
     }
 }
