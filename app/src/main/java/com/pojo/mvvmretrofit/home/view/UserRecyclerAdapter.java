@@ -44,6 +44,7 @@ public class UserRecyclerAdapter extends RecyclerView.Adapter<UserRecyclerAdapte
 
         GetUserDetailsModel getUserDetailsModel =getUserDetailsModelList.get(position);
         holder.layoutAdapterBinding.setData(getUserDetailsModel);
+        holder.layoutAdapterBinding.executePendingBindings();
 
     }
 
@@ -62,7 +63,19 @@ public class UserRecyclerAdapter extends RecyclerView.Adapter<UserRecyclerAdapte
 
             this.layoutAdapterBinding=layoutAdapterBinding;
 
+            layoutAdapterBinding.adapterBody.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    GetUserDetailsModel getUserDetailsModel  =getUserDetailsModelList.get(getAdapterPosition());
+
+                    System.out.println("AdapterReceivedData "+getUserDetailsModel.getBody()+" "+getUserDetailsModel.getTitle());
+
+                }
+            });
         }
+
+
     }
 
 }

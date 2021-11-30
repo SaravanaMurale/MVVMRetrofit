@@ -50,9 +50,6 @@ public class GetDataActivity extends AppCompatActivity {
 
 
 
-
-
-
         getDataViewModel.getDataFromServer().observe(this, new Observer<List<GetUserDetailsModel>>() {
             @Override
             public void onChanged(List<GetUserDetailsModel> getUserDetailsModels) {
