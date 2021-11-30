@@ -23,6 +23,11 @@ public class UserRecyclerAdapter extends RecyclerView.Adapter<UserRecyclerAdapte
         this.getUserDetailsModelList = getUserDetailsModelList;
     }
 
+    public void setData(List<GetUserDetailsModel> getUserDetailsModelList){
+        this.getUserDetailsModelList=getUserDetailsModelList;
+        notifyDataSetChanged();
+    }
+
 
 
     @NonNull
@@ -36,6 +41,9 @@ public class UserRecyclerAdapter extends RecyclerView.Adapter<UserRecyclerAdapte
 
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
+
+        GetUserDetailsModel getUserDetailsModel =getUserDetailsModelList.get(position);
+        holder.layoutAdapterBinding.setData(getUserDetailsModel);
 
     }
 

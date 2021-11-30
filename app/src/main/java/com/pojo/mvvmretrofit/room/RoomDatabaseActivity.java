@@ -97,10 +97,6 @@ public class RoomDatabaseActivity extends AppCompatActivity {
             }
         }).start();
 
-
-
-
-
     }
 
 
