@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment2">
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="com.pojo.mvvmretrofit.navigationcomponent.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment2_to_transactionFragment2"
+            app:destination="@id/transactionFragment2" />
+        <action
+            android:id="@+id/action_mainFragment2_to_sendMoneyFragment"
+            app:destination="@id/sendMoneyFragment" />
+        <action
+            android:id="@+id/action_mainFragment2_to_viewBalanceFragment"
+            app:destination="@id/viewBalanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionFragment2"
+        android:name="com.pojo.mvvmretrofit.navigationcomponent.TransactionFragment"
+        android:label="TransactionFragment" />
+    <fragment
+        android:id="@+id/sendMoneyFragment"
+        android:name="com.pojo.mvvmretrofit.navigationcomponent.SendMoneyFragment"
+        android:label="SendMoneyFragment" >
+        <action
+            android:id="@+id/action_sendMoneyFragment_to_confirmationFragment"
+            app:destination="@id/confirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewBalanceFragment"
+        android:name="com.pojo.mvvmretrofit.navigationcomponent.ViewBalanceFragment"
+        android:label="ViewBalanceFragment" />
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="com.pojo.mvvmretrofit.navigationcomponent.ConfirmationFragment"
+        android:label="ConfirmationFragment" />
+</navigation>
