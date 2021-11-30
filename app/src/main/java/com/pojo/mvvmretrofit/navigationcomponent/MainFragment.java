@@ -15,7 +15,6 @@ import com.pojo.mvvmretrofit.R;
 
 public class MainFragment extends Fragment {
 
-
     Button btnTransaction,btnSendMoney,btnViewBalance;
 
     public MainFragment() {

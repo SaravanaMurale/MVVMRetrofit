@@ -10,8 +10,6 @@ import retrofit2.http.Headers;
 
 public interface ApiInteface {
 
-
-
     String BuildConfig= "https://jsonplaceholder.typicode.com/";
 
     @GET(BuildConfig+ "posts")

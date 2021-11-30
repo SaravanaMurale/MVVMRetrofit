@@ -15,24 +15,18 @@ import retrofit2.Response;
 
 public class Repository {
 
-
-
     public LiveData<Response> loginUser(LoginRequestModel loginRequestModel) {
 
         MutableLiveData<Response> liveData = new MutableLiveData<>();
 
         //liveData.setValue();
         return liveData;
-
-
     }
 
 
     public LiveData<List<GetUserDetailsModel>> getUserDetails(){
 
         MutableLiveData<List<GetUserDetailsModel>> liveData = new MutableLiveData<>();
-
-
         RetrofitClient.getApiClient().getUserDetails().enqueue(new Callback<List<GetUserDetailsModel>>() {
             @Override
             public void onResponse(Call<List<GetUserDetailsModel>> call, Response<List<GetUserDetailsModel>> response) {
