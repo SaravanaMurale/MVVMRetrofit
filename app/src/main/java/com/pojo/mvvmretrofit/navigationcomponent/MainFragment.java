@@ -44,6 +44,7 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
+                //Used to navigate from one fragment to another fragment
                 Navigation.findNavController(v).navigate(R.id.action_mainFragment2_to_transactionFragment2);
 
             }

@@ -10,6 +10,7 @@ import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 
 import com.pojo.mvvmretrofit.R;
@@ -31,7 +32,11 @@ public class NameFragment extends Fragment {
         btnName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(v).navigate(R.id.action_nameFragment_to_amountFragment);
+                //Navigation.findNavController(v).navigate(R.id.action_nameFragment_to_amountFragment);
+
+                //Used to pass value from one fragment to another fragment
+                NavDirections navDirections=NameFragmentDirections.actionNameFragmentToAmountFragment(editName.getText().toString());
+                Navigation.findNavController(v).navigate(navDirections);
             }
         });
 
