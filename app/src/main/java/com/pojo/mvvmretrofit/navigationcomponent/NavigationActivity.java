@@ -18,6 +18,8 @@ public class NavigationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
 
+        //https://www.youtube.com/watch?v=W9bf5qozYwM
+
         navController= Navigation.findNavController(this,R.id.nav_host_fragment_container_main);
         NavigationUI.setupActionBarWithNavController(this,navController);
 

@@ -26,7 +26,7 @@ public class ConfirmationFragment extends Fragment {
 
 
        name.setText( ConfirmationFragmentArgs.fromBundle(getArguments()).getName());
-       amount.setText( ConfirmationFragmentArgs.fromBundle(getArguments()).getAmount());
+       amount.setText( String.valueOf(ConfirmationFragmentArgs.fromBundle(getArguments()).getAmount()));
 
 
         return view;
