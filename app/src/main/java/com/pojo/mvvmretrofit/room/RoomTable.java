@@ -6,6 +6,7 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "roomtable")
 public class RoomTable {
+
     public RoomTable(){
 
     }

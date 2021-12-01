@@ -37,6 +37,4 @@ public interface RoomQueryDAO {
     List<RoomTable> loadAllByIds(int[] userIds);
 
 
-
-
 }

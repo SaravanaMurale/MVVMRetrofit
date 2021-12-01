@@ -37,11 +37,9 @@ public class RoomDatabaseActivity extends AppCompatActivity {
 
                 for (int i = 0; i <roomTableList.size() ; i++) {
 
-                    System.out.println("ReceivedData "+roomTableList.size()+" "+roomTableList.get(i).getFirstName()+" "+roomTableList.get(i).getFirstName());
+                    System.out.println("ReceivedDataFromRoom "+roomTableList.size()+" "+roomTableList.get(i).getFirstName()+" "+roomTableList.get(i).getLastName());
 
                 }
-
-
             }
         }).start();
 
@@ -49,29 +47,11 @@ public class RoomDatabaseActivity extends AppCompatActivity {
 
     public void deleteATodo(View view) {
 
-        threadCheck();
+      //  threadCheck();
 
     }
 
-    private void threadCheck() {
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-
-                for (int i = 0; i <10 ; i++) {
-
-
-                    System.out.println("PrintingIValue "+i);
-
-                    SystemClock.sleep(1000);
-
-                }
-
-            }
-        }).start();
-
-    }
 
     public void updateATodo(View view) {
 
@@ -98,6 +78,5 @@ public class RoomDatabaseActivity extends AppCompatActivity {
         }).start();
 
     }
-
 
 }

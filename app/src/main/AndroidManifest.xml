@@ -17,7 +17,7 @@
         <!-- <activity android:name=".room.RoomDatabaseActivity"></activity> -->
         <!-- <activity android:name=".home.view.LoginActivity"></activity> -->
         <!-- <activity android:name=".home.view.GetDataActivity" /> -->
-        <activity android:name=".navigationcomponent.NavigationActivity">
+        <activity android:name=".room.RoomDatabaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
