@@ -28,15 +28,42 @@
         android:name="com.pojo.mvvmretrofit.navigationcomponent.SendMoneyFragment"
         android:label="SendMoneyFragment" >
         <action
-            android:id="@+id/action_sendMoneyFragment_to_confirmationFragment"
-            app:destination="@id/confirmationFragment" />
+            android:id="@+id/action_sendMoneyFragment_to_nameFragment"
+            app:destination="@id/nameFragment" />
     </fragment>
     <fragment
         android:id="@+id/viewBalanceFragment"
         android:name="com.pojo.mvvmretrofit.navigationcomponent.ViewBalanceFragment"
         android:label="ViewBalanceFragment" />
     <fragment
+        android:id="@+id/nameFragment"
+        android:name="com.pojo.mvvmretrofit.navigationcomponent.NameFragment"
+        android:label="NameFragment" >
+        <action
+            android:id="@+id/action_nameFragment_to_amountFragment"
+            app:destination="@id/amountFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/amountFragment"
+        android:name="com.pojo.mvvmretrofit.navigationcomponent.AmountFragment"
+        android:label="AmountFragment" >
+        <action
+            android:id="@+id/action_amountFragment_to_confirmationFragment"
+            app:destination="@id/confirmationFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
         android:id="@+id/confirmationFragment"
         android:name="com.pojo.mvvmretrofit.navigationcomponent.ConfirmationFragment"
-        android:label="ConfirmationFragment" />
+        android:label="ConfirmationFragment" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="amount"
+            app:argType="integer" />
+    </fragment>
 </navigation>
