@@ -1,6 +1,7 @@
 package com.pojo.mvvmretrofit.network;
 
 import com.pojo.mvvmretrofit.home.model.GetUserDetailsModel;
+import com.pojo.mvvmretrofit.mvprecyclerview.RootVideoView;
 
 import java.util.List;
 
@@ -14,5 +15,10 @@ public interface ApiInteface {
 
     @GET(BuildConfig+ "posts")
     Call<List<GetUserDetailsModel>> getUserDetails();
+
+//https://raw.githubusercontent.com/bikashthapa01/myvideos-android-app/master/data.json
+    @GET("bikashthapa01/myvideos-android-app/master/zdata.json")
+    Call<List<RootVideoView>> getData();
+
 
 }

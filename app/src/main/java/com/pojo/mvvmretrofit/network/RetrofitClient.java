@@ -16,7 +16,8 @@ public class RetrofitClient {
     public static Retrofit getInstance(){
 
         retrofit=new Retrofit.Builder()
-                .baseUrl("https://jsonplaceholder.typicode.com/")
+                //.baseUrl("https://jsonplaceholder.typicode.com/")
+                .baseUrl("https://raw.githubusercontent.com/")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
